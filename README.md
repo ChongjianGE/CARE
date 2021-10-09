@@ -57,8 +57,8 @@ bash single_gpu_train.sh    #(We also provide the script for trainig CARE with o
 Before start the evaluation, run this command first to add your PYTHONPATH:
 
 ```eval
-export PYTHONPATH=$PYTHONPATH:{your_code_path}/care_5trans/
-export PYTHONPATH=$PYTHONPATH:{your_code_path}/care_5trans/care/
+export PYTHONPATH=$PYTHONPATH:{your_code_path}/care/
+export PYTHONPATH=$PYTHONPATH:{your_code_path}/care/care/
 ```
 
 Then, to evaluate the pre-trained model (e.g., ResNet50-100epoch) on ImageNet, run:
