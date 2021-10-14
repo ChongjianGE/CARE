@@ -37,7 +37,7 @@ Relpace the original data path in care/data/dataset_lmdb (Line7 and Line40) with
 
 >📋  Note that we use the lmdb file to speed-up the data-processing procedure.
 >
->📋  We also provide code to load data with the single image(.jpg) file.
+>📋  We also provide code to load data with the single image(.jpg) format.
 
 ## Training
 
