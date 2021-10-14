@@ -36,6 +36,8 @@ Prepare the ImageNet data in {data_path}/train.lmdb and {data_path}/val.lmdb
 Relpace the original data path in care/data/dataset_lmdb (Line7 and Line40) with your new {data_path}.
 
 >📋  Note that we use the lmdb file to speed-up the data-processing procedure.
+>
+>📋  We also provide code to load data with the single image(.jpg) file.
 
 ## Training
 
@@ -58,7 +60,7 @@ bash single_gpu_train.sh    #(We also provide the script for trainig CARE with o
 >3. using `--log_path`  to specify the main folder for saving experimental results.
 >4. using `--experiment-name` to specify the folder for saving training outputs.
 >
->The code base also supports for training other backbones (e.g., ResNet101 and ResNet152) with different training schedules (e.g., 200, 400 and 800 epochs).
+>The codebase also supports for training other backbones (e.g., ResNet101 and ResNet152) with different training schedules (e.g., 200, 400 and 800 epochs).
 ## Evaluation
 Before start the evaluation, run this command first to add your PYTHONPATH:
 
