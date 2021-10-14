@@ -1,10 +1,16 @@
 # Revitalizing CNN Attention via Transformers in Self-Supervised Visual Representation Learning
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository is the official implementation of CARE. 
+This repository is the official implementation of [CARE paper](https://arxiv.org/abs/2110.05340). 
 ![Graph](images/pipeline.png)
 
 ## Updates
 - (09/10/2021) Our paper is accepted by NeurIPS 2021. 
+- (14/10/2021) Our code is available for ssl pretraining and image classifications evaluation. 
+
+## Comming
+  - [x] Provide resnet_50(100e) models and logs.
+  - [ ] Complete the pretrained models and logs.
 
 ## Requirements
 
@@ -13,11 +19,12 @@ To install requirements:
 ```setup
 conda create -n care python=3.6
 conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.1 -c pytorch
-pip install tensorboard
+pip install tensorboardX
 pip install ipdb
 pip install einops
 pip install loguru
 pip install pyarrow==3.0.0
+pip install imdb
 pip install tqdm
 ```
 
@@ -36,7 +43,6 @@ Before training the ResNet-50 (100 epoch) in the paper, run this command first t
 
 ```train
 export PYTHONPATH=$PYTHONPATH:{your_code_path}/care/
-export PYTHONPATH=$PYTHONPATH:{your_code_path}/care/care/
 ```
 
 Then run the training code via:
@@ -58,7 +64,6 @@ Before start the evaluation, run this command first to add your PYTHONPATH:
 
 ```eval
 export PYTHONPATH=$PYTHONPATH:{your_code_path}/care/
-export PYTHONPATH=$PYTHONPATH:{your_code_path}/care/care/
 ```
 
 Then, to evaluate the pre-trained model (e.g., ResNet50-100epoch) on ImageNet, run:
@@ -79,7 +84,7 @@ bash debug_val.sh    #(We also provide the script for evaluating CARE with only 
 We here provide some pre-trained models in the [shared folder]:
 
 Here are some examples.
-- [ResNet-50 100epoch] trained on ImageNet using ResNet-50 with 100 epochs. 
+- [ResNet-50 100epoch](https://drive.google.com/file/d/1cOBdLFwcBEAY-f8wKtWeYapK1hFgnbCD/view?usp=sharing) trained on ImageNet using ResNet-50 with 100 epochs.  [Training log](https://drive.google.com/file/d/1uEOSnh25sw5cxTxmLF7V-ku4sk25ZGtD/view?usp=sharing) and [Evaluation log](https://drive.google.com/file/d/1LL7H5zoTNBFRNcohlVnqyQzqlR1BLFGR/view?usp=sharing)
 - [ResNet-50 200epoch] trained on ImageNet using ResNet-50 with 200 epochs. 
 - [ResNet-50 400epoch] trained on ImageNet using ResNet-50 with 400 epochs. 
 
@@ -93,7 +98,7 @@ Our model achieves the following performance on :
 
 | Method   | Backbone  | epoch |Top-1  | Top-5 | pretrained model  | linear evaluation model |
 | ---------| --------- | ------|--------------- | -------------- | ----------------- | ----------------------- |
-| CARE     | ResNet50  | 100   |    72.02%      |      90.02%    | [pretrained] (wip) | [linear_model] (wip) |
+| CARE     | ResNet50  | 100   |    72.02%      |      90.02%    | [pretrained](https://drive.google.com/file/d/1cOBdLFwcBEAY-f8wKtWeYapK1hFgnbCD/view?usp=sharing) | [linear_model](https://drive.google.com/file/d/1cCVCmAjYTapjiSxP5N85_Hbdz1kPl4Rd/view?usp=sharing) |
 | CARE     | ResNet50  | 200   |    73.78%      |      91.50%    | [pretrained] (wip) | [linear_model] (wip) |
 | CARE     | ResNet50  | 400   |    74.68%      |      91.97%    | [pretrained] (wip) | [linear_model] (wip) |
 | CARE     | ResNet50  | 800   |    75.56%      |      92.32%    | [pretrained] (wip) | [linear_model] (wip) |
@@ -134,11 +139,20 @@ Our model achieves the following performance on :
 
 
 
-
-
-
 >📋  More results are provided in the paper.
 >
-## Contributing
+## Acknowledgements
+We especially thank the contributors of the [momentum2-teacher](https://github.com/zengarden/momentum2-teacher) codebase for providing helpful code.
 
->📋  WIP
+## Citation
+If you think our work is useful, please feel free to cite our paper 😆 :
+```
+@inproceedings{chongjian_nips20_care,
+  title={Revitalizing CNN Attentions via Transformers in Self-Supervised Visual Representation Learning},
+  author={Ge, Chongjian and Liang, Youwei and Song, Yibing and Jiao, Jianbo and Wang, Jue and Luo Ping},
+  booktitle="Advances in Neural Information Processing Systems",
+  year={2021},
+}
+```
+
+

@@ -1,0 +1,3 @@
+export PYTHONPATH=$PYTHONPATH:/apdcephfs/share_1290939/chongjiange/github_repo/CARE/
+python3.6 -m torch.distributed.launch --nproc_per_node=8 tools/train_new.py --distributed -b 1024 -d 0-7 -n 2 --experiment-name care_res50_100e_github -f exps/arxiv/exp_8_v100/care_100e_exp.py
+python3.6 -m torch.distributed.launch --nproc_per_node=8 tools/eval_new.py --distributed -b 256 -ckpt 100 --experiment-name care_res50_100e_github -f exps/arxiv/linear_eval_exp_care.py
