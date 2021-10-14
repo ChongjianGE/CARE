@@ -149,7 +149,7 @@ We especially thank the contributors of the [momentum2-teacher](https://github.c
 ## Citation
 If you think our work is useful, please feel free to cite our paper 😆 :
 ```
-@inproceedings{chongjian_nips20_care,
+@inproceedings{chongjian_nips21_care,
   title={Revitalizing CNN Attentions via Transformers in Self-Supervised Visual Representation Learning},
   author={Ge, Chongjian and Liang, Youwei and Song, Yibing and Jiao, Jianbo and Wang, Jue and Luo Ping},
   booktitle="Advances in Neural Information Processing Systems",
