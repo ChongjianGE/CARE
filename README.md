@@ -6,7 +6,7 @@ This repository is the official implementation of [CARE paper](https://arxiv.org
 
 ## Updates
 - (09/10/2021) Our paper is accepted by NeurIPS 2021. 
-- (14/10/2021) Our code is available for ssl pretraining and image classifications evaluation. 
+- (14/10/2021) Our code is available for ssl pretraining and image classification evaluation. 
 
 ## Comming
   - [x] Provide resnet_50(100e) models and logs.
