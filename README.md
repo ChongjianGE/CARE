@@ -1,7 +1,15 @@
-# Revitalizing CNN Attention via Transformers in Self-Supervised Visual Representation Learning
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# CARE (NeurIPS 2021)
 
-This repository is the official implementation of [CARE paper](https://arxiv.org/abs/2110.05340). 
+**[Revitalizing CNN Attention via Transformers in Self-Supervised Visual Representation Learning](https://arxiv.org/abs/2110.05340)**
+<br>
+[Chongjian GE](https://chongjiange.github.io/),
+[Youwei Liang](https://youweiliang.github.io/),
+[Yibing Song](https://ybsong00.github.io/),
+[Jianbo Jiao](https://jianbojiao.com/),
+[Jue Wang](https://juew.org/), and
+[Ping Luo](http://luoping.me/)
+<br>
+
 ![Graph](images/pipeline.png)
 
 ## Updates
