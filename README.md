@@ -152,7 +152,8 @@ Our model achieves the following performance on :
 >📋  More results are provided in the paper.
 >
 ## Acknowledgements
-We especially thank the contributors of the [momentum2-teacher](https://github.com/zengarden/momentum2-teacher) codebase for providing helpful code.
+We especially thank the contributors of the [momentum2-teacher](https://github.com/zengarden/momentum2-teacher) codebase for providing helpful code. 
+For questions regarding CARE, feel free to post in this repository or directly contact the author (rhettgee@connect.hku.hk).
 
 ## Citation
 If you think our work is useful, please feel free to cite our paper 😆 :
