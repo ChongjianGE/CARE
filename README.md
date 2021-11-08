@@ -156,7 +156,7 @@ We especially thank the contributors of the [momentum2-teacher](https://github.c
 For questions regarding CARE, feel free to post in this repository or directly contact the author (rhettgee@connect.hku.hk).
 
 ## Citation
-If you think our work is useful, please feel free to cite our paper 😆 :
+If you find our work useful in your research please consider citing our paper:
 ```
 @article{ge2021revitalizing,
   title={Revitalizing CNN Attentions via Transformers in Self-Supervised Visual Representation Learning},
