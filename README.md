@@ -158,11 +158,11 @@ For questions regarding CARE, feel free to post in this repository or directly c
 ## Citation
 If you find our work useful in your research please consider citing our paper:
 ```
-@article{ge2021revitalizing,
-  title={Revitalizing CNN Attentions via Transformers in Self-Supervised Visual Representation Learning},
-  author={Ge, Chongjian and Liang, Youwei and Song, Yibing and Jiao, Jianbo and Wang, Jue and Luo, Ping},
-  journal={arXiv preprint arXiv:2110.05340},
-  year={2021}
+@InProceedings{ge2021revitalizing,
+  author       = {Chongjian Ge and Youwei Liang and Yibing Song and Jianbo Jiao and Jue Wang and Ping Luo},
+  title        = {Revitalizing CNN Attentions via Transformers in Self-Supervised Visual Representation Learning},
+  booktitle    = {Advances in Neural Information Processing Systems},
+  year         = {2021},
 }
 ```
 
